@@ -1,0 +1,45 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Roboto, serif;
+  position: relative;
+}
+
+body {
+  height: 100%;
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  position: absolute;
+  height: 100%;
+  width: 33%;
+  background-color: #efef;
+  color: #333;
+  right: -100%;
+  transition: 0.4s all;
+  z-index: 10;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+#closeBtn,
+#sandwich {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+#closeBtn {
+  z-index: 15;
+}
+
+@media (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}

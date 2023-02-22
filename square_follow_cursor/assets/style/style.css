@@ -1,0 +1,30 @@
+/* reset */ 
+
+* {
+    margin: 0;
+    padding: 0;
+
+  }
+  
+  body {
+    font-family: sans-serif;
+    background: #3a3535;
+  }
+  
+  /* cursor */
+  
+  .cursor {
+    /* taille, couleur et position du carre */
+    cursor: grab;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 15%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* emplacement du curseur par rapport au carre  */
+    transform: translateX(-50%) translateY(-50%); 
+   
+  }
+  
