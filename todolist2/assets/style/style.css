@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+body {
+    background-color: #00171F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+background-color: #fff;
+padding: 10px;
+width: 450px;
+border-radius: 6px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+overflow: hidden;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.full_input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    width: 90%;
+    padding: 10px 5px;
+    border:1px solid #000000;
+    outline: 0;
+    border-radius:0 2px 0 6px;
+}
+
+button{
+    width: 10%;
+    font-size: 20px;
+    height: 39px;
+    border:0;
+    background-color: #DB3EB1;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+
+}
+
+.paragraphe_style{
+    margin: 10px 0;
+    padding: 10px 0;
+    padding-left: 5px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #41B6E6;
+    word-break: break-all;
+    cursor: pointer;
+    animation: anime 0.5s linear;
+}
+
+.paragraph_click{
+    background-color: #DB3EB1;
+    text-decoration: line-through
+}
+
+.paragraphe_style:last-child{
+    margin-bottom: 0;
+}
+
+@keyframes anime{
+    from{
+        transform: translateY(50px);
+        }
+        to{
+        transform: translateX(5px);
+        }
+}
