@@ -21,7 +21,7 @@ addToDoButton.onclick = function() {
     inputField.value = "";
 
     paragraph.addEventListener('click', function(){
-        paragraph.classList.add('paragraph_click');
+        paragraph.classList.toggle('paragraph_click');
     })
 
     paragraph.addEventListener('dblclick', function(){
