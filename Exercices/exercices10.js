@@ -1,0 +1,1 @@
+// Exercice 10 : Écrire une fonction récursive qui prend un tableau de nombres et qui retourne la somme de tous les nombres du tableau.
