@@ -186,7 +186,7 @@ console.log(moyenneJsOfDw1[0].firstName, moyenneJsOfDw1[0].js.mark);
 
 // 9. Meilleur élève des deux classes
 const toutesMesClasses = dw2.concat(dw1).sort((a,b) => {
-  return a.js.mark > b.js.mark ? 1 : -1;
+  return a.js.mark < b.js.mark ? 1 : -1;
 })
 console.log(
   toutesMesClasses[0].firstName,
@@ -199,7 +199,14 @@ console.log(
   .filter(student => student.gender === 'female')
   .sort ((a, b) => a.english.mark > b.english.mark ? 1 : -1)[0]
 );
+
 // 11. Meilleur garcon en moyenne générale
+console.log(
+  dw2
+  .concat(dw1)
+  .filter(student => student.gender === 'male')
+  .sort ((a, b) => a.english.mark > b.english.mark ? 1 : -1)[0]
+);
 
 // 12. Qui a la note médiane en anglais parmi dw1 ?
 
