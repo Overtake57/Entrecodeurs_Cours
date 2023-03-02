@@ -141,8 +141,8 @@ console.log("il y a donc " + (dw1.length + dw2.length) + " eleves present");
 
 // 2. Lister l'ensemble des élèves des deux classes dans l'ordre alphabétique
 
-const students = dw1.concat(dw2);
-console.log(students.sort((a, b) => a.firstName.localeCompare(b.firstName)));
+const studentt = dw1.concat(dw2);
+console.log(studentt.sort((a, b) => a.firstName.localeCompare(b.firstName)));
 
 // 3. Prendre les 3 premiers élèves de la classe dw1
 
@@ -200,7 +200,8 @@ console.log(
 );
 
 // 11. Meilleur garcon en moyenne générale
-const garcons = dw1
+const garcons = dw2
+  .concat(dw1)
   .filter((student) => student.gender === "male")
   .map((student) => {
     const jsMark = student.js.mark;
@@ -257,7 +258,38 @@ console.log(
 
 // 12.a. Donner sa position dans la classe
 
+
 // 13. Qui a la moyenne médiane générale dw1 + dw2 ?
+const students = dw1.concat(dw2);
+
+// Calculer la moyenne générale de chaque étudiant
+const averages = students.map(student => {
+  const sum = Object.values(student).reduce((acc, cur) => {
+    if (typeof cur === 'object') {
+      return acc + (cur.mark / cur.rate);
+    } else {
+      return acc;
+    }
+  }, 0);
+  return sum / 2;
+});
+
+// Calculer la médiane des moyennes
+averages.sort((a, b) => a - b);
+const medianIndex = Math.floor(averages.length / 2);
+const median = (averages.length % 2 === 0) ? 
+              (averages[medianIndex] + averages[medianIndex - 1]) / 2 :
+              averages[medianIndex];
+
+// Trouver les étudiants dont la moyenne générale est égale à la moyenne médiane générale
+const studentsWithMedianAverage = students.filter((student, index) => {
+  const average = averages[index];
+  return average === median;
+});
+
+// Afficher les noms des étudiants qui ont la moyenne médiane générale
+const names = studentsWithMedianAverage.map(student => student.firstName);
+console.log("L' étudiants qui a la moyenne médiane générale est : " + names.join(", "));
 
 // 14. Moyenne générale des filles et moyenne générale des garcons ?
 
