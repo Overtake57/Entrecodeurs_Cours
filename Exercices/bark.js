@@ -34,10 +34,13 @@ class Dog extends Animal {
 //? On cree l'instance de la classe `Animal` en utilisant les parametres `Kitten` et `Meow` pour le nom et le son, et appele sa methode `makeSound()`.
 const animal = new Animal("Kitten", "Meow");
 animal.makeSound();
+
 //? On cree une instance de la classe Dog en utilisant les parametres `Rex`, `Bark` et `German Shepherd` pour le nom, le son et la race.
 const dog = new Dog("Rex", "Bark", "German Shepherd");
+
 //? On appele la methode `makeSound()` et la methode `bark()`.
 dog.makeSound();
 dog.bark();
+
 //? On utilise la methode `Object.keys()` pour afficher le nombre de propriétés de chaque instance (l'instance de `Animal` et l'instance de `Dog`)
 console.log(Object.keys(dog).length);

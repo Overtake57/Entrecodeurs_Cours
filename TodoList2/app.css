@@ -1,0 +1,74 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Merriweather, Arial, sans-serif !important;
+    min-height: 67vh;
+    background-color: #333333;
+    color: white;
+}
+
+h1 {
+    font-family: Merriweather, Arial, sans-serif !important;
+    font-weight: 800;
+    font-size: clamp(2rem, 25vw, 4.4rem);
+}
+
+input::placeholder {
+    color: #777;
+}
+
+.app {
+    margin-top: 33vh;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+.input {
+    background-color: white;
+    border-radius: 2px;
+    color: #333;
+    padding: 10px;
+    min-width: 280px;
+    text-transform: uppercase;
+    font-size: clamp(1.4rem, 25vw, 2rem);;
+}
+
+.todo {
+    background-color: #444;
+    color: #eee;
+    border-bottom: 1px solid #555;
+    padding: 10px;
+    font-size: clamp(1.2rem, 25vw, 1.6rem);;
+    max-width: 400px;
+}
+
+.todo.checked {
+    text-decoration: line-through;
+}
+
+.todo:hover {
+    border-color: white;
+    cursor: pointer;
+}
+
+.flex_center_center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.alignItems_stretch {
+    align-items: stretch;
+}
+
+

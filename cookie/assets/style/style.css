@@ -1,0 +1,13 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Merriweather, Arial, sans-serif !important;
+    min-height: 67vh;
+    background-color: #333333;
+    color: white;
+}
+
+
+

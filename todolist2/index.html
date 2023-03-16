@@ -1,23 +1,29 @@
-<!DOCTYPE html>
-<html lang="fr">
-  <head>
-    <link rel="stylesheet" href="assets/style/style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>To do List</title>
-  </head>
-  <body>
-    <section>
-      <h1>To Do List</h1>
-      <div class="container">
-        <div class="full_input">
-          <input type="text" placeholder='Add a task...' id = "inputField">
-          <button id="addToDo">+</button>
-      </div>
-      <div id="toDoContainer"></div>
-    </section>
-    <script src="assets/script/app.js"></script>
-  </body>
- 
+<html lang="en">
+    <head>
+        <title>Todo app</title>
+        <link href="http://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css">
+        <link href="/reset.css" rel="stylesheet">
+        <link href="/app.css" rel="stylesheet">
+    </head>
+    <body>
+        <section class="app flex_center_center">
+            <h1>TODO's</h1>
+            <div class="container flex_column alignItems_stretch">
+                <input class="input" placeholder="Type your todo" />
+                <div class="list"></div>
+            </div>
+            <h1>Car Garage</h1>
+            <div class="container">
+                <input class="input" placeholder="Type your Brand" />
+                <input class="input" placeholder="Type your Model" />
+                <input class="input" placeholder="Type your Color" />
+                <div class="list"></div>
+            </div>
+      
+        </section>
+        <script src="./TodoDemo.js"></script>
+        <script src="./app.js"></script>
+        <script src="./car.js"></script>
+    </body>
 </html>
+
